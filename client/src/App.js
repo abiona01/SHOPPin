@@ -1,16 +1,17 @@
-import './App.css';
-import styled from "styled-components"
-
-const Heading = styled.h1`
-color: red;
-font-weight; bold;
-`;
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import { GlobalStyle } from "./App.style";
+import { Home } from './pages/Home';
 function App() {
   return (
     <div className="App">
-      <Heading>
-        Hello
-      </Heading>
+      <GlobalStyle />
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
