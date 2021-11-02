@@ -1,7 +1,8 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
 body {
+    width: 100%;
     margin: 0;
     padding: 0;
     .css-10nakn3-MuiModal-root-MuiPopover-root-MuiMenu-root{
