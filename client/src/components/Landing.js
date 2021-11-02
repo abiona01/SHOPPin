@@ -1,7 +1,10 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { LandingBox } from "./Landing.style";
-
+import slide3 from "../image/altumcode-Ui3zMjpMrmM-unsplash.jpg"
+import slide2 from "../image/ivan-didenko-jxCGoUiBAiA-unsplash.jpg"
+import slide1 from "../image/mike-petrucci-c9FQyqIECds-unsplash.jpg"
+import slide4 from "../image/sam-o-leary-RCQ6rHPBrOY-unsplash.jpg"
 const responsive = {
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
@@ -16,31 +19,31 @@ const responsive = {
         items: 1,
     }
 };
-export const Landing = () => {
+export default function Landing (props){
     return (
         <LandingBox>
             <Carousel
                 swipeable={false}
                 draggable={false}
-                showDots={true}
+                showDots={false}
                 responsive={responsive}
                 ssr={true} // means to render carousel on server-side.
                 infinite={true}
-                autoPlay={this.props.deviceType !== "mobile" ? true : false}
-                autoPlaySpeed={1000}
+                autoPlay={props.deviceType !== "mobile" ? true : false}
+                autoPlaySpeed={5000}
                 keyBoardControl={true}
-                customTransition="all .5"
-                transitionDuration={500}
+                customTransition="all .8"
+                transitionDuration={1000}
                 containerClass="carousel-container"
                 removeArrowOnDeviceType={["tablet", "mobile"]}
-                deviceType={this.props.deviceType}
+                deviceType={props.deviceType}
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-40-px"
             >
-                <div>Item 1</div>
-                <div>Item 2</div>
-                <div>Item 3</div>
-                <div>Item 4</div>
+                <img src={slide1} alt="carousel item 1"/>
+                <img src={slide2} alt="carousel item 2" />
+                <img src={slide3} alt="carousel item 3" />
+                <img src={slide4} alt="carousel item 4" />
             </Carousel>
         </LandingBox>
     )
