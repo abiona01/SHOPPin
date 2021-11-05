@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { GlobalStyle } from './App.style';
-import { Home } from './pages/Home';
-import { Product } from './pages/Product';
+import { Home } from './pages/home/Home';
+import { Product } from './pages/product/Product';
 function App() {
 	return (
 		<div className='App'>

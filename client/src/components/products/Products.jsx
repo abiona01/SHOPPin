@@ -1,6 +1,6 @@
 import { Heading, ProductsBox } from './Products.style';
 import Grid from '@mui/material/Grid';
-import { Product } from './Product';
+import { Product } from '../product/Product';
 
 export const Products = () => {
 	return (

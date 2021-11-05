@@ -4,6 +4,7 @@ import {
 	ProductDetails,
 	ProductName,
 } from './Product.style';
+import slide2 from '../../image/ivan-didenko-jxCGoUiBAiA-unsplash.jpg';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -15,7 +16,7 @@ export const Product = () => {
 			<CardMedia
 				component='img'
 				height='200'
-				image='https://images.unsplash.com/photo-1624265853364-12b264a2f903?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8Ym84alFLVGFFMFl8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+				image={slide2}
 				alt='Product image'
 			/>
 			<CardContent>
