@@ -1,3 +1,10 @@
+import { ProductDetail } from '../../components/product-details/ProductDetail';
+import { ProductContainer } from './Product.style';
+
 export const Product = () => {
-	return <div></div>;
+	return (
+		<ProductContainer>
+			<ProductDetail />
+		</ProductContainer>
+	);
 };

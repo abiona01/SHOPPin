@@ -29,7 +29,7 @@ export const Product = () => {
 			</CardContent>
 			<CardActions>
 				<ProductButton variant='contained'>
-					<Link to='/product/:id'>View</Link>
+					<Link to='/product/'>View</Link>
 				</ProductButton>
 				<ProductButton variant='contained'>
 					<Link to='/cart'>Add to Cart</Link>
