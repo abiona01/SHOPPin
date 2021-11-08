@@ -5,17 +5,17 @@ import { Typography } from '@mui/material';
 
 export const ProductCard = styled(Card)`
 	padding-bottom: 1.5rem;
-	.css-46bh2p-MuiCardContent-root {
+	.MuiCardContent-root {
 		padding-left: 1rem;
 	}
-	.css-1t6e9jv-MuiCardActions-root {
+	.MuiCardActions-root {
 		margin-top: 1rem;
 		padding-left: 1rem;
 	}
-	.css-ahj2mt-MuiTypography-root {
+	.MuiTypography-root {
 		line-height: 1;
 	}
-	.css-sghohy-MuiButtonBase-root-MuiButton-root {
+	.MuiButtonBase-root.MuiButton-root {
 		font-weight: 600;
 		background: #ce5937;
 		background: -moz-linear-gradient(
@@ -36,7 +36,7 @@ export const ProductCard = styled(Card)`
 			text-decoration: none;
 		}
 	}
-	.css-1t6e9jv-MuiCardActions-root > :not(:first-of-type) {
+	.MuiCardActions-root > :not(:first-of-type) {
 		margin-left: 1rem;
 	}
 	@media only screen and (max-width) {
